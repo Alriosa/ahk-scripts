@@ -1,6 +1,6 @@
 ﻿#MaxThreadsPerHotkey 3
 
-^b::
+^!a::
 Toggle := !Toggle
 Loop
 {
