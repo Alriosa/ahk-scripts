@@ -11,7 +11,7 @@ Loop
 }
 Return
 
-#Internal Titles
+
 :://init::
 InputBox, state, InternalGEN, Please enter case state(WC/TS/IP/WI)., , 230, 140
 InputBox, contract, InternalGEN, Please enter Cx Contract(Professional/Standard/Internal/Gov)., , 260, 160
