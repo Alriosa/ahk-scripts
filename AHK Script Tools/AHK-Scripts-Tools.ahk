@@ -1,5 +1,4 @@
 ﻿#SingleInstance force
-#notrayicon
 #Include Winclip\WinClipAPI.ahk
 #Include Winclip\WinClip.ahk
 
@@ -35,7 +34,7 @@ return
 :://nb::
 InputBox, notes, InternalGEN, Insert the notes., , 230, 140
 Send ******************* {enter}
-Send Font,s14(Carlos Rios | Azure Support Engineer Notes) {enter}
+Send Font, s14, Verdana Arial Carlos Rios | Azure Support Engineer Notes {enter}
 Send ******************* {enter}
 Send App Service Team - Dev {enter}
 Send Case Documentation {enter}
