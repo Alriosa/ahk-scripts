@@ -33,19 +33,16 @@ Send, %state% | %contract% | %product% | %itype% | %desc%
 return
 
 :://nb::
-Send ^b*******************^b {enter}
-Send Carlos Rios | Azure Support Engineer Notes {enter}
+InputBox, notes, InternalGEN, Insert the notes., , 230, 140
+Send ******************* {enter}
+Send Font,s14(Carlos Rios | Azure Support Engineer Notes) {enter}
 Send ******************* {enter}
 Send App Service Team - Dev {enter}
 Send Case Documentation {enter}
-Send <span style="color:ff0000">red text</span> {enter}
 Send {enter}
-Send -Notes:
-InputBox, notes, InternalGEN, Insert the notes., , 230, 140
-Send, %notes% {enter}
+Send -Notes: %notes% {enter}
 Send {enter}
 Send =================== {enter}
 Send Contact: v-cario@microsoft.com {enter}
-Send {Enter}
 Send Note create at: %A_MM%/%A_DD%/%A_YYYY% Time=%A_Hour%:%A_Min% (UTC Timezone)
 return
