@@ -1,7 +1,4 @@
 ﻿#SingleInstance force
-#Include Winclip\WinClipAPI.ahk
-#Include Winclip\WinClip.ahk
-
 
 #MaxThreadsPerHotkey 3
 
@@ -12,7 +9,7 @@ Loop
 	If (!Toggle)
 		Break
 	Click
-	Sleep 500 ; Make this number higher for slower clicks, lower for faster.
+	Sleep 500
 }
 Return
 
@@ -34,7 +31,7 @@ return
 :://nb::
 InputBox, notes, InternalGEN, Insert the notes., , 230, 140
 Send ******************* {enter}
-Send Font, s14, Verdana Arial Carlos Rios | Azure Support Engineer Notes {enter}
+Send Carlos Rios | Azure Support Engineer Notes {enter}
 Send ******************* {enter}
 Send App Service Team - Dev {enter}
 Send Case Documentation {enter}
@@ -45,3 +42,50 @@ Send =================== {enter}
 Send Contact: v-cario@microsoft.com {enter}
 Send Note create at: %A_MM%/%A_DD%/%A_YYYY% Time=%A_Hour%:%A_Min% (UTC Timezone)
 return
+
+:://nw::
+InputBox, runningStack, InternalGEN, Insert the notes., , 230, 140
+InputBox, currentIssue, InternalGEN, Insert the notes., , 230, 140
+InputBox, scope, InternalGEN, Insert the notes., , 230, 140
+InputBox, notes, InternalGEN, Insert the notes., , 230, 140
+InputBox, notes, InternalGEN, Insert the notes., , 230, 140
+Send ******************* {enter}
+Send Carlos Rios | Azure Support Engineer Notes {enter}
+Send ******************* {enter}
+Send App Service Team - Dev {enter}
+Send Case Documentation {enter}
+Send Web Application {enter}
+Send {enter}
+Send -Next Action: %notes% {enter}
+Send {enter}
+Send {enter}
+Send -Running Stack: %notes% {enter}
+Send {enter}
+Send {enter}
+Send -Notes: %notes% {enter}
+Send {enter}
+Send {enter}
+Send -Notes: %notes% {enter}
+Send {enter}
+Send =================== {enter}
+Send Contact: v-cario@microsoft.com {enter}
+Send Note create at: %A_MM%/%A_DD%/%A_YYYY% Time=%A_Hour%:%A_Min% (UTC Timezone)
+return
+
+
+
+
+
+
+;Labor section.
+:://lbcom::
+Send Communication with the Customer. 
+return
+
+:://lbdoc::
+Send Elaboration of Documentation about the case and updating it.
+return 
+
+::lbtro::
+Send Working on the case of the client
+return 
