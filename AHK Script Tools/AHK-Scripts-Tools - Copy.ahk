@@ -54,7 +54,7 @@ return
 Send tex_cra_cari@tex.support.microsoft.com{enter}
 Sleep, 1000
 Send {enter}
-Send 1115111993Aa{!}{2}
+Send 
 Send {enter}
 Sleep, 1200
 Send {enter}
@@ -62,7 +62,7 @@ return
 
 ::\\ms::
 Send v-cario@microsoft.com {enter}
-Send 1115111993Aa{!}
+Send 
 Send {enter}
 return
 
