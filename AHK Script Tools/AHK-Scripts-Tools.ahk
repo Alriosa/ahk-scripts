@@ -50,6 +50,8 @@ Send Contact: v-cario@microsoft.com {enter}
 Send Note create at: %A_MM%/%A_DD%/%A_YYYY% Time=%A_Hour%:%A_Min% (UTC Timezone)
 return
 
+
+;Account part
 ::\\sd::
 Send tex_cra_cari@tex.support.microsoft.com{enter}
 Sleep, 1000
@@ -62,9 +64,26 @@ return
 
 ::\\ms::
 Send v-cario@microsoft.com {enter}
-Send 1115111993Aa{!}
 Send {enter}
 return
+
+::\\tek::
+Send carlos.rios@tek-experts.com{enter}
+Sleep, 1000
+Send {enter}
+Send Michi2021
+Send {enter}
+return
+
+::\\gp::
+Send carlos.rios@tek-experts.com{enter}
+Send {Tab}
+Send Michi2021
+Send {enter}
+return
+;Account part End
+
+
 
 ::\\2d::
 Send ******************* {enter}
@@ -152,6 +171,11 @@ return
 
 
 ;Labor section.
+::\\fqr::
+Send Delivering FQR to the client. 
+return
+
+
 ::\\lbc::
 Send Communication with the Customer. 
 return
@@ -163,4 +187,4 @@ return
 ::\\lbt::
 Send Working on the case of the client
 return
-
+;Labor Section End
