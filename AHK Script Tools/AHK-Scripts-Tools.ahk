@@ -1,6 +1,7 @@
 ﻿#SingleInstance force
-
 #MaxThreadsPerHotkey 3
+#Include WinClipAPI.ahk
+#Include WinClip.ahk
 
 ^!a::
 Toggle := !Toggle
@@ -81,6 +82,20 @@ Send {Tab}
 Send Michi2021
 Send {enter}
 return
+
+::\\monet::
+Send Tek Experts{tab}
+Send carlos.rios@tek-experts.com{tab}
+Send Michi2020
+Send {enter}
+return
+
+::\\chr::
+Send carlos.rios@tek-experts.com{tab}
+Send 1115111993Aa{!}
+Send {Enter}
+return
+
 ;Account part End
 
 
@@ -188,3 +203,25 @@ return
 Send Working on the case of the client
 return
 ;Labor Section End
+
+
+;Emails
+
+::\opening::
+InputBox clientName, InternalGEN, Client name., , 230, 140
+InputBox srn , InternalGEN, Please enter case number., , 230, 140
+Send Hello %clientName% {enter}
+Send My name is Carlos Rios and I am the Microsoft Support Engineer from App Service Team that will be working with you in the case number %srn% You can reach me using the contact information in my signature.{enter} 
+Send {enter}
+Send For what I am understanding{enter}
+Send {enter}
+Send Attentive to your answer.{enter}
+Send {enter}
+Send Best Regards,{enter}
+Send Carlos Rios | Support Engineer | Azure Support {enter}
+Send Email: v-cario@microsoft.com | Manager: v-juasol@microsoft.com {enter}
+Send Working hours: Sunday(2:00Pm - 10:00pm MDT) Monday to Thursday 10:00 Am - 7:00 Pm MDT {enter}
+Send To reach Azure Support outside of my working hours, please email azurebu@microsoft.com with your support request number. ​{enter}
+Send Azure Support will never ask for your account password or full credit card number. ​{enter}
+Send For your privacy and security, NEVER send your login credentials or full credit card number in the email. ​{enter}
+return
