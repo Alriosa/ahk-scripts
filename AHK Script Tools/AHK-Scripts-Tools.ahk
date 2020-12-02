@@ -1,7 +1,10 @@
-﻿#SingleInstance force
+﻿#NoEnv
+#SingleInstance force
 #MaxThreadsPerHotkey 3
-#Include WinClipAPI.ahk
-#Include WinClip.ahk
+#Include C:\Users\carlos.rios\Documents\Alriosa Code\ahk-scripts\AHK Script Tools\WinClipAPI.ahk
+#Include C:\Users\carlos.rios\Documents\Alriosa Code\ahk-scripts\AHK Script Tools\WinClip.ahk
+
+wc := new WinClip
 
 ^!a::
 Toggle := !Toggle
@@ -206,6 +209,20 @@ return
 
 
 ;Emails
+
+::\\op:: 
+WinClip.Clear()
+rtf := FileOpen("C:\Users\carlos.rios\Documents\Alriosa Code\ahk-scripts\AHK Script Tools\ahkfiles\opening.rtf", "r").read()
+WinClip.SetRTF(rtf)
+WinClip.Paste()
+Return
+
+::\\test:: 
+WinClip.Clear()
+html := FileOpen("C:\Users\carlos.rios\Documents\Alriosa Code\ahk-scripts\AHK Script Tools\ahkfiles\notes.htm", "r").read()
+WinClip.SetHTML(html)
+WinClip.Paste()
+Return
 
 ::\opening::
 InputBox clientName, InternalGEN, Client name., , 230, 140
