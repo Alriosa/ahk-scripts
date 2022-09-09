@@ -17,6 +17,8 @@ Loop
 Return
 
 
+
+
 ;::\\it::
 ;InputBox, state, InternalGEN, Please enter case state(WC/TS/IP/WI)., , 230, 140
 ;InputBox, contract, InternalGEN, Please enter Cx Contract(Professional/Standard/Internal/Dev)., , 300, 150
@@ -55,6 +57,27 @@ Return
 
 
 ;Account part
+
+::\\adm::
+Send A01985273{enter}
+Sleep, 1000
+Send Z42{]}7=XukS{)}1*>n
+Send {enter}
+Sleep, 1000
+return
+
+::\\upin::
+Send ADBV0zz{tab}
+Send 151193Valencia{.}
+Send {enter}
+return
+
+::\\kpin::
+Send K01985273{tab}
+Send WelCom3{#}{$}1
+Send {enter}
+return
+
 ;::\\sd::
 ;Send tex_cra_cari@tex.support.microsoft.com{enter}
 ;Sleep, 1000
